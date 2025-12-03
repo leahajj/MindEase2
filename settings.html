@@ -10,6 +10,7 @@
   <div class="container settings-container">
     <h1 class="title">Settings</h1>
 
+    <!-- NOTIFICATIONS -->
     <div class="setting-item">
       <span>Notifications</span>
       <label class="switch">
@@ -18,6 +19,7 @@
       </label>
     </div>
 
+    <!-- LANGUAGE -->
     <div class="setting-item">
       <span>Language</span>
       <select class="language-select">
@@ -27,6 +29,7 @@
       </select>
     </div>
 
+    <!-- TEXT TO SPEECH -->
     <div class="setting-item">
       <span>Text-to-Speech</span>
       <label class="switch">
@@ -34,19 +37,33 @@
         <span class="slider"></span>
       </label>
     </div>
-    
+
+    <!-- PRIVACY -->
     <div class="setting-item">
       <span>Privacy & Data Use</span>
       <button class="privacy-btn" onclick="goTo('privacy.html')">View</button>
     </div>
 
 
-    <!-- TREND ANALYSIS SECTION  -->
+    <!--  TREND ANALYSIS SECTION  -->
     <h2 style="margin-top:25px;color:#2b3f73;">Mood Trend Analysis</h2>
-    <button class="save-btn" onclick="loadTrend()" style="margin-top:10px;width:100%;">Load Trend</button>
-    <p id="trendResult" class="summary-box" style="margin-top:10px;white-space:pre-line;">Trend will appear here.</p>
-    <!--  END  -->
 
+    <button class="save-btn"
+            onclick="loadTrend()"
+            style="margin-top:10px;width:100%;">
+      Load Trend
+    </button>
+
+    <!--  THIS SHOWS THE TREND  -->
+    <p id="trendResult"
+       class="summary-box"
+       style="margin-top:10px;white-space:pre-line;">
+       Trend will appear here.
+    </p>
+    <!--  END TREND SECTION  -->
+
+
+    <!-- BACK BUTTON -->
     <button class="home-btn" onclick="goTo('index.html')">Back to Home</button>
   </div>
 
